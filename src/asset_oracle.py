@@ -1,6 +1,7 @@
 from web3 import Web3
 from eth_abi import decode
 
+import os
 import requests
 import json
 import time
@@ -102,7 +103,8 @@ def _fill_prices(
 def get_prices(
     vault: str, timestamp: int = 0
 ) -> Tuple[int, Dict[Tuple[int, str], Tuple[int, int]]]:
-    config = json.load(open(f"./{vault}.json", "r"))
+    data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+    config = json.load(open(os.path.join(data_dir, f"{vault}.json"), "r"))
 
     if not timestamp:
         timestamp = int(time.time())

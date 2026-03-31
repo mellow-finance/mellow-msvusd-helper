@@ -39,11 +39,11 @@ Asset price configuration is split per chain:
 
 | File | Chain |
 |---|---|
-| `msvUSD.json` | Asset oracle config (all chains) |
-| `msvUSD:ethereum.json` | Ethereum collector state override |
-| `msvUSD:arbitrum.json` | Arbitrum collector state override |
-| `msvUSD:base.json` | Base collector state override |
-| `msvUSD:mezo.json` | Mezo collector state override |
+| `data/msvUSD.json` | Asset oracle config (all chains) |
+| `data/msvUSD:ethereum.json` | Ethereum collector state override |
+| `data/msvUSD:arbitrum.json` | Arbitrum collector state override |
+| `data/msvUSD:base.json` | Base collector state override |
+| `data/msvUSD:mezo.json` | Mezo collector state override |
 
 ## Usage
 
@@ -52,23 +52,23 @@ Asset price configuration is split per chain:
 Computes the msvUSD price report and current APY:
 
 ```bash
-python3 msvUSD.py
+python3 src/msvUSD.py
 ```
 
 With a fixed timestamp:
 ```bash
-python3 msvUSD.py --fixed-timestamp 1700000000
+python3 src/msvUSD.py --fixed-timestamp 1700000000
 ```
 
 With extra off-chain rewards included in TVL:
 ```bash
-python3 msvUSD.py --reward-asset usdc --reward-amount 5000
+python3 src/msvUSD.py --reward-asset usdc --reward-amount 5000
 # reward-asset: usdc | usdt | musd
 ```
 
 With a custom config file (e.g. `msvUSD-staging.json`):
 ```bash
-python3 msvUSD.py --config msvUSD-staging
+python3 src/msvUSD.py --config msvUSD-staging
 ```
 
 ### Distribution
@@ -76,7 +76,7 @@ python3 msvUSD.py --config msvUSD-staging
 Collects per-subvault balances and writes them to `./distributions/msvUSD_{timestamp}.json`:
 
 ```bash
-python3 msvUSD.py --distribution true
+python3 src/msvUSD.py --distribution true
 ```
 
 ### Yarn Scripts

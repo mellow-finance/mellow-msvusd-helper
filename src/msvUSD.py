@@ -2,6 +2,7 @@ import json
 import socket
 import subprocess
 import time
+import os
 import shutil
 from contextlib import contextmanager
 from web3 import Web3
@@ -249,7 +250,8 @@ def calculate_total_assets_usd(
 
 
 def load_data():
-    path = f"./python_scripts/instances/{VAULT_SYMBOL}"
+    data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+    path = os.path.join(data_dir, VAULT_SYMBOL)
     data = {
         1: json.load(open(f"{path}:ethereum.json", "r")),
         42161: json.load(open(f"{path}:arbitrum.json", "r")),
