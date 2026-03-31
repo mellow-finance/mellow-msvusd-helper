@@ -1,0 +1,93 @@
+{
+    "1": {
+        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48": {
+            "type": "pyth",
+            "chain_id": 1,
+            "pyth": "0x4305FB66699C3B2702D4d05CF36551390A4c69C6",
+            "oracle_id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+            "capped_value": 100000000,
+            "decimals": 6
+        },
+        "0xdAC17F958D2ee523a2206206994597C13D831ec7": {
+            "type": "pyth",
+            "chain_id": 1,
+            "pyth": "0x4305FB66699C3B2702D4d05CF36551390A4c69C6",
+            "oracle_id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+            "capped_value": 100000000,
+            "decimals": 6
+        },
+        "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186": {
+            "type": "pyth",
+            "chain_id": 1,
+            "pyth": "0x4305FB66699C3B2702D4d05CF36551390A4c69C6",
+            "oracle_id": "0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de",
+            "capped_value": 100000000,
+            "decimals": 18
+        },
+        "0x6f40d4A6237C257fff2dB00FA0510DeEECd303eb": {
+            "type": "pyth-hermes",
+            "chain_id": 1,
+            "oracle_id": "0x47d462d8bac4c29b6ae1792029b9b92c8adea12ed22155bfc22f481287f1e349",
+            "capped_value": 1000000000,
+            "decimals": 18
+        }
+    },
+    "42161": {
+        "0xaf88d065e77c8cC2239327C5EDb3A432268e5831": {
+            "type": "ref",
+            "chain_id": 1,
+            "asset": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+            "decimals": 6
+        },
+        "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9": {
+            "type": "ref",
+            "chain_id": 1,
+            "asset": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "decimals": 6
+        }
+    },
+    "8453": {
+        "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+            "type": "pyth",
+            "chain_id": 8453,
+            "pyth": "0x8250f4aF4B972684F7b336503E2D6dFeDeB1487a",
+            "oracle_id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+            "capped_value": 100000000,
+            "decimals": 6
+        },
+        "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186": {
+            "type": "pyth",
+            "chain_id": 8453,
+            "pyth": "0x8250f4aF4B972684F7b336503E2D6dFeDeB1487a",
+            "oracle_id": "0xc753c899ffdfcc8d1a02440fe380501b454b559122998bcd245d9063d07cc162",
+            "capped_value": 100000000,
+            "decimals": 18
+        }
+    },
+    "31612": {
+        "0xdD468A1DDc392dcdbEf6db6e34E89AA338F9F186": {
+            "type": "pyth",
+            "chain_id": 31612,
+            "pyth": "0x2880aB155794e7179c9eE2e38200202908C17B43",
+            "oracle_id": "0x0617a9b725011a126a2b9fd53563f4236501f32cf76d877644b943394606c6de",
+            "capped_value": 100000000,
+            "decimals": 18
+        },
+        "0x04671C72Aab5AC02A03c1098314b1BB6B560c197": {
+            "type": "pyth",
+            "chain_id": 31612,
+            "pyth": "0x2880aB155794e7179c9eE2e38200202908C17B43",
+            "oracle_id": "0xeaa020c61cc479712813461ce153894a96a6c00b21ed0cfc2798d1f9a9e9c94a",
+            "capped_value": 100000000,
+            "decimals": 6
+        },
+        "0xeB5a5d39dE4Ea42C2Aa6A57EcA2894376683bB8E": {
+            "type": "pyth",
+            "chain_id": 31612,
+            "pyth": "0x2880aB155794e7179c9eE2e38200202908C17B43",
+            "oracle_id": "0x2b89b9dc8fdf9f34709a5b106b472f0f39bb6ca9ce04b0fd7f2e971688e2e53b",
+            "capped_value": 100000000,
+            "decimals": 6
+        }
+    }
+}

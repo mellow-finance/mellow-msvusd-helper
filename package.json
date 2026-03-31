@@ -1,0 +1,12 @@
+{
+    "name": "mellow-msvusd-helpers",
+    "license": "UNLICENSED",
+    "version": "1.0.0",
+    "repository": "https://github.com/mellow-finance/mellow-msvusd-helpers",
+    "scripts": {
+        "prettier": "black ./",
+        "install:python": "pip install -r requirements.txt",
+        "msvusd:oracle-report": "python3 msvUSD.py",
+        "msvusd:distribution": "python3 msvUSD.py --distribution true"
+    }
+}
