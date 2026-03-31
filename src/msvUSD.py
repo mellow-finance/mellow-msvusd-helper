@@ -357,7 +357,7 @@ def get_report(
 
     short_response = []
     for x, y in zip(
-        [USDC, USDT, MUSD],
+        [USDC, MUSD, USDT],
         prices_d18,
     ):
         short_response.append([x, str(y)])
