@@ -75,6 +75,7 @@ def _fill_prices(
         return price
     elif asset_config["type"] == "pyth":
         w3, block_number = w3s[asset_config["chain_id"]]
+        print(f'fetching asset price for chain_id={asset_config['chain_id']}, asset = {asset}')
         result = (
             w3.eth.contract(address=asset_config["pyth"], abi=PYTH_ABI)
             .functions.getPriceUnsafe(asset_config["oracle_id"])
@@ -103,6 +104,7 @@ def _fill_prices(
 def get_prices(
     vault: str, timestamp: int = 0
 ) -> Tuple[int, Dict[Tuple[int, str], Tuple[int, int]]]:
+    print('Fetching asset prices')
     data_dir = os.path.join(os.path.dirname(__file__), "..", "data")
     config = json.load(open(os.path.join(data_dir, f"{vault}.json"), "r"))
 
@@ -114,6 +116,7 @@ def get_prices(
         chain_id = int(chain_id)
         w3 = get_w3(chain_id)
         w3s[chain_id] = (w3, find_block(chain_id, timestamp))
+        print(f'chain_id={chain_id}, block_number={w3s[chain_id][1]}')
 
     prices = {}
     batches = {}

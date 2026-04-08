@@ -190,6 +190,7 @@ def get_distributions(
 ) -> List[Dict[str, Any]]:
     distribution: List[Dict[str, Any]] = []
     for chain_id in data:
+        print(f'Processing chain_id = {chain_id}')
         w3 = get_w3(chain_id)
         state_overrides = data[chain_id]
         override_status = get_state_override_status(chain_id)
